@@ -26,7 +26,7 @@ export const useRoutes = isAuthenticated => {
         <Route path="/:id">
           <RemoveProduct />
         </Route>
-        <Redirect to="/create" />
+        <Redirect to="/" />
       </Switch>
     )
   }
