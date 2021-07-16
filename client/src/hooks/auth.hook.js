@@ -2,6 +2,7 @@ import {useState, useCallback, useEffect} from 'react'
 
 const storageName = 'userData'
 
+// auth local starage hook
 export const useAuth = () => {
   const [token, setToken] = useState(null)
   const [ready, setReady] = useState(false)

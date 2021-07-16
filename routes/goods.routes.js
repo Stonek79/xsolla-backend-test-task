@@ -1,11 +1,13 @@
 const {Router} = require('express')
 const config = require('config')
 const shortid = require('shortid')
-const Product = require('../models/Product')
-const auth = require('../middleware/auth.middleware')
 const router = Router()
 const queryString = require('query-string');
 
+const Product = require('../models/Product')
+const auth = require('../middleware/auth.middleware')
+
+// data fo pagination and sorting
 let currentPageNumber = 1;
 const pageItemsLimit = 10;
 let currentSort = { name: 1 };

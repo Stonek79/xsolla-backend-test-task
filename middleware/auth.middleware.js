@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken')
 const config = require('config')
 
+// user auth middleware
 module.exports = (req, res, next) => {
   if (req.method === 'OPTIONS') {
     return next()

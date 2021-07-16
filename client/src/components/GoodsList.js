@@ -1,5 +1,6 @@
 import React from 'react'
 
+// goods list component
 export const GoodsList = ({ goods }) => {
   const { currentGoods } = goods;
   if (!currentGoods) return <></>;
@@ -16,9 +17,24 @@ export const GoodsList = ({ goods }) => {
         <td>{product.type}</td>
         <td>{product.price} {product.currency}</td>
         <td>
-          <a className="waves-effect btn" href={`/detail/${product._id}`}>Product info</a>
-          <a className="waves-effect blue btn" href={`/edit/${product._id}`}>Edit product info</a>
-          <a className="waves-effect red btn" href={`/${product._id}`}>Delete</a>
+          <a
+            className="waves-effect btn"
+            href={`/detail/${product._id}`}
+          >
+            Product info
+          </a>
+          <a
+            className="waves-effect blue btn"
+            href={`/edit/${product._id}`}
+          >
+            Edit product info
+          </a>
+          <a
+            className="waves-effect red btn"
+            href={`/${product._id}`}
+          >
+            Delete
+          </a>
         </td>
       </tr>
     )
@@ -48,10 +64,22 @@ export const GoodsList = ({ goods }) => {
       <tfoot>
         <tr>
           <td>
-            <a className="grey btn" disabled={currentPage === 1 ? true : false} href={`/products?page=${currentPage - 1}`}>Prev</a>
+            <a 
+              className="grey btn"
+              disabled={currentPage === 1 ? true : false}
+              href={`/products?page=${currentPage - 1}`}
+            >
+              Prev
+            </a>
           </td>
           <td>
-            <a className="grey btn" disabled={currentPage === all ? true : false} href={`/products?page=${currentPage + 1}`}>Next</a>
+            <a
+              className="grey btn"
+              disabled={currentPage === all ? true : false}
+              href={`/products?page=${currentPage + 1}`}
+            >
+              Next
+            </a>
           </td>
         </tr>
       </tfoot>

@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
+
 import {useHttp} from '../hooks/http.hook'
 import {useMessage} from '../hooks/message.hook'
 import {AuthContext} from '../context/AuthContext'
@@ -79,7 +80,7 @@ export const AuthPage = () => {
           </div>
           <div className="card-action">
             <button
-              className="btn yellow darken-4"
+              className="btn green"
               style={{marginRight: 10}}
               disabled={loading}
               onClick={loginHandler}

@@ -7,7 +7,7 @@ const router = Router()
 
 const User = require('../models/User')
 
-// api auth registration
+// api auth new user registration
 router.post(
   '/register',
   [
@@ -46,7 +46,7 @@ router.post(
   }
 })
 
-// api auth login
+// api auth loginuser 
 router.post(
   '/login',
   [

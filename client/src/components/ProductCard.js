@@ -1,5 +1,6 @@
 import React from 'react'
 
+// product info component
 export const ProductCard = ({ product }) => {
   return (
     <>

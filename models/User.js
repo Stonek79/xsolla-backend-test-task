@@ -1,3 +1,4 @@
+// user info schema
 const {Schema, model, Types} = require('mongoose')
 
 const schema = new Schema({

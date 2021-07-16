@@ -1,8 +1,9 @@
 import React, {useCallback, useContext, useEffect, useState} from 'react'
-import { useFormik } from 'formik';
+import {useFormik} from 'formik';
+import {useHistory, useParams} from 'react-router-dom'
+
 import {useHttp} from '../hooks/http.hook'
 import {AuthContext} from '../context/AuthContext'
-import {useHistory, useParams} from 'react-router-dom'
 
 export const EditPage = () => {
   const {token} = useContext(AuthContext)
