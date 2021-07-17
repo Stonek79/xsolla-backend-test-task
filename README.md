@@ -39,26 +39,29 @@ You must have node.js installed on your machine (version 14.0 or higher).
 
 Open your console and enter the commands:
 
-$ user@name: git clone https://github.com/Stonek79/xsolla-backend-test-task
+*$ user@name: git clone https://github.com/Stonek79/xsolla-backend-test-task*
   
 
 Then find and go to the folder ../xsolla-backend-test-task/ on your machine and launch installation:
 
 for server:
 
-$ user@name/folder/xsolla-backend-test-task: npm install 
+*$ user@name/folder/xsolla-backend-test-task: npm install* 
 
 
 for client:
 
 up to 'client' folder using 'cd client' command ant then install client side
 
-$ user@name/folder/xsolla-backend-test-task/client: npm install
+*$ user@name/folder/xsolla-backend-test-task/client: npm install*
   
 
 After installation you can use the development mode and modify the application to your needs:
 
-$ user@name/folder/xsolla-backend-test-task/client: npm run dev
+*$ user@name/folder/xsolla-backend-test-task/client: npm run dev*
 
 
 The login page will automatically open and you can test application
+
+
+* If you want to use your own MongoDB database you can include it in the json file of the 'config' directory
