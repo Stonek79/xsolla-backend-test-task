@@ -1,5 +1,4 @@
 const {Router} = require('express')
-const config = require('config')
 const shortid = require('shortid')
 const router = Router()
 const queryString = require('query-string');

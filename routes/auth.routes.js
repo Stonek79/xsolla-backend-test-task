@@ -46,7 +46,7 @@ router.post(
   }
 })
 
-// api auth loginuser 
+// api auth login user 
 router.post(
   '/login',
   [
